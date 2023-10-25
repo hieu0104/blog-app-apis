@@ -40,7 +40,7 @@ import java.util.List;
 
         ),
         servers = {
-        @Server(url = "/myapp/", description = "Default Server URL")
+        @Server(url = "", description = "Default Server URL")
 }
         //
 
