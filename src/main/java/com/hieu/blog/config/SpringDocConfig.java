@@ -38,9 +38,11 @@ import java.util.List;
                 title = "  Blog app apis backend "
 
 
-        ),
+        )
+      /*  ,
         servers = {
         @Server(url = "", description = "Default Server URL")
+        */
 }
         //
 
