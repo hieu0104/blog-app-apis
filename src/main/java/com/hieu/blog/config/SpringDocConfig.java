@@ -1,5 +1,6 @@
 package com.hieu.blog.config;
 
+import io.swagger.v3.oas.annotations.servers.Server;
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.info.License;
 import io.swagger.v3.oas.models.security.SecurityRequirement;
@@ -37,7 +38,14 @@ import java.util.List;
                 title = "  Blog app apis backend "
 
 
-        )
+        ),
+        servers = {
+        @Server(url = "/myapp/", description = "Default Server URL")
+}
+        //
+
+
+        //
 
 )
 
@@ -75,4 +83,5 @@ public class SpringDocConfig {
                         .license(new License().name("License of API")
                                 .url("API license URL")));
     }
+
 }
