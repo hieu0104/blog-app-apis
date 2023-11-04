@@ -1,6 +1,7 @@
 package com.hieu.blog.security;
 
 import java.io.IOException;
+import java.util.Enumeration;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -38,10 +39,13 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 		
 		// 1. get token
 		String requestToken = request.getHeader("Authorization");
+		//
+
+
 
 		// Bear 2352523sdgsg
 
-		System.out.println(requestToken);
+		System.out.println("req token :"+requestToken);
 
 		String username = null;
 		String token = null;
@@ -94,6 +98,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
 						.buildDetails(request));
 
+			//	SecurityContextHolder.getContext().setAuthentication(usernamePasswordAuthenticationToken);
 				SecurityContextHolder.getContext().setAuthentication(usernamePasswordAuthenticationToken);
 			} else {
 
