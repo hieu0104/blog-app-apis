@@ -30,11 +30,11 @@
 //
 //	private List<SecurityContext> securityContexts() {
 //		return Arrays.asList(SecurityContext
-//				
+//
 //				.builder()
-//				
+//
 //				.securityReferences(sf())
-//				
+//
 //				.build());
 //	}
 //
@@ -59,7 +59,7 @@
 //				.select()
 //
 //				.apis(RequestHandlerSelectors.any())
-//				
+//
 //				.paths(PathSelectors.any())
 //
 //				.build();
